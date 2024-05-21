@@ -1,11 +1,11 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_outer_classname = "GreetProto";
+option java_outer_classname = "TicTacToeProto";
 
 import "google/protobuf/empty.proto";
 
-package greet;
+package tictactoe;
 
 // The game service definition.
 service GameService {

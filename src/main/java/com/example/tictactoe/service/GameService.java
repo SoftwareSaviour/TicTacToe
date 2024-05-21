@@ -1,13 +1,13 @@
 package com.example.tictactoe.service;
 
 import com.google.protobuf.Empty;
-import greet.Board;
-import greet.GameServiceGrpc;
-import greet.Player;
-import greet.Response;
 import io.grpc.stub.StreamObserver;
 import lombok.RequiredArgsConstructor;
 import net.devh.boot.grpc.server.service.GrpcService;
+import tictactoe.Board;
+import tictactoe.GameServiceGrpc;
+import tictactoe.Player;
+import tictactoe.Response;
 
 @GrpcService
 @RequiredArgsConstructor

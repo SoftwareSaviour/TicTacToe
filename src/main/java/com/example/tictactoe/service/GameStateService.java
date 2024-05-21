@@ -1,9 +1,8 @@
 package com.example.tictactoe.service;
 
-import greet.Player;
 import lombok.Data;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
+import tictactoe.Player;
 
 import java.security.InvalidParameterException;
 import java.util.HashMap;

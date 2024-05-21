@@ -1,9 +1,6 @@
 package com.example.tictactoe.service;
 
 import com.google.protobuf.Empty;
-import greet.GameServiceGrpc;
-import greet.Player;
-import greet.Response;
 import io.grpc.inprocess.InProcessChannelBuilder;
 import io.grpc.inprocess.InProcessServerBuilder;
 import io.grpc.testing.GrpcCleanupRule;
@@ -14,6 +11,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+import tictactoe.GameServiceGrpc;
+import tictactoe.Player;
+import tictactoe.Response;
 
 @ExtendWith(MockitoExtension.class)
 public class GameServiceTest {
