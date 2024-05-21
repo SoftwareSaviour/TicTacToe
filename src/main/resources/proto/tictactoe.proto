@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "GreetProto";
+
+import "google/protobuf/empty.proto";
+
+package greet;
+
+// The game service definition.
+service GameService {
+
+  rpc CreateNewSession (google.protobuf.Empty) returns (Response);
+  rpc MakeMove (Player) returns (Response);
+  rpc GetCurrentStateOfSession (google.protobuf.Empty) returns (Board);
+  rpc EndCurrentSession (Player) returns (Response);
+}
+
+// The request message containing the player id and position to be played.
+message Player {
+  string id = 1;
+  string position = 2;
+}
+
+// The response message containing the response.
+message Response {
+  string greeting = 1;
+}
+
+//Return board when user requests state of game session
+message Board {
+  map<string, string> board = 1;
+}
